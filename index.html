@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>MOJI 사전</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>MOJI 🌊</h1>
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="search-box"
+            placeholder="단어, 발음, 뜻으로 검색..."
+            autocomplete="off"
+          />
+        </div>
+      </header>
+      <main id="results-container">
+        <div class="initial-message">
+          <p>사전 데이터를 불러오는 중입니다...</p>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
